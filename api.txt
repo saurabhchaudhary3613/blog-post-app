@@ -1,0 +1,24 @@
+
+
+- Blog post API
+https://reduxblog.herokuapp.com
+
+-GET End point - /api/post - Get Method
+https://reduxblog.herokuapp.com/api/posts
+
+- Post End point - api/posts - Post method
+https://reduxblog.herokuapp.com/api/posts
+
+- GET BY ID End point - api/posts/:id - GET method By id
+https://reduxblog.herokuapp.com/api/posts/5
+
+- DELETE BY ID End point - api/posts/:id - DELETE method By id
+https://reduxblog.herokuapp.com/api/posts/5
+
+
+- POST MAN Network Request client
+chrome://apps/
+
+
+
+
