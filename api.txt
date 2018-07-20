@@ -20,5 +20,9 @@ https://reduxblog.herokuapp.com/api/posts/5
 chrome://apps/
 
 
+- Form validations
+- Redux form validations
+
+
 
 

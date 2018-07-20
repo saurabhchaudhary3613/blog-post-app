@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "format": "prettier --print-width 80 --tab-width 4 --single-quote --write src/**/*.js",
+    "precommit": "lint-staged"
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +31,14 @@
     "react-router-dom": "^4.2.2",
     "redux": "4.0.0",
     "redux-form": "^6.6.3",
-    "redux-promise": "^0.6.0"
+    "redux-promise": "^0.6.0",
+    "lint-staged": "^7.0.2",
+    "prettier": "^1.11.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --print-width 80 --tab-width 4 --single-quote --write",
+      "git add"
+    ]
   }
 }
