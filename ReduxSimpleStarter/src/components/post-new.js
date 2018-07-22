@@ -26,7 +26,6 @@ class PostNew extends Component {
     }
     onSubmit(values) {
         //this === component
-        console.log(values);
         this.props.createPost(values, () => {
             this.props.history.push('/');
         });
@@ -43,8 +42,8 @@ class PostNew extends Component {
                     component={this.renderField}
                 />
                 <Field
-                    name="catagories"
-                    label="Catagories"
+                    name="categories"
+                    label="Categories"
                     component={this.renderField}
                 />
                 <Field
@@ -72,8 +71,8 @@ function validate(values) {
     if (!values.title) {
         errors.title = 'Enter a title !';
     }
-    if (!values.catagories) {
-        errors.catagories = 'Enter a catagories !';
+    if (!values.categories) {
+        errors.categories = 'Enter a categories !';
     }
     if (!values.content) {
         errors.content = 'Enter a content !';
