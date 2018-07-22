@@ -23,6 +23,17 @@ chrome://apps/
 - Form validations
 - Redux form validations
 
+{Field.meta.error} -> meta.error property automatically added to the field object from validate function
+- the 'name' attribute of the input type connects to the validate function
+
+- Form field state 
+- pristine - no input is touchrd yet and usrer has not yet selected it
+- touched - user has selected or focus on input and then focus pout to the input
+- invalid - 
+
+RequestMethod: OPTIONS- when we are making cross origin resource sharing type request- says that we are making ajax request to a differnet domain
+
+
 
 
 

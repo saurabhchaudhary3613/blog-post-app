@@ -2,14 +2,17 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+
 import { fetchPosts } from '../actions/index';
 
 class PostIndex extends Component {
     componentDidMount() {
         this.props.fetchPosts();
+        console.log('didmount=>', this.props.posts);
     }
     renderPosts() {
         return _.map(this.props.posts, post => {
+            console.log('map=>', this.props.posts);
             return (
                 <li className="list-group-item" key={post.id}>
                     {post.title}
@@ -19,7 +22,7 @@ class PostIndex extends Component {
     }
 
     render() {
-        console.log(this.props.posts);
+        console.log('Posts=>', this.props.posts);
 
         return (
             <div>
@@ -41,5 +44,5 @@ function mapStateToProps(state) {
 
 export default connect(
     mapStateToProps,
-    { fetchPosts: fetchPosts }
+    { fetchPosts }
 )(PostIndex);
