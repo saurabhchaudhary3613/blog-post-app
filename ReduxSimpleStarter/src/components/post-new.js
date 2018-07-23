@@ -54,7 +54,7 @@ class PostNew extends Component {
                 <button type="submit" className="btn btm-primary">
                     Submit
                 </button>
-                <Link className="btn btn-danger" to="/post/index">
+                <Link className="btn btn-danger" to="/posts/index">
                     cancel
                 </Link>
             </form>
