@@ -24,7 +24,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-preset-stage-1": "^6.1.18",
+    "lint-staged": "^7.0.2",
     "lodash": "^3.10.1",
+    "prettier": "^1.11.1",
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-redux": "5.0.7",
@@ -32,8 +34,7 @@
     "redux": "4.0.0",
     "redux-form": "^6.6.3",
     "redux-promise": "^0.6.0",
-    "lint-staged": "^7.0.2",
-    "prettier": "^1.11.1"
+    "redux-thunk": "^2.3.0"
   },
   "lint-staged": {
     "*.js": [

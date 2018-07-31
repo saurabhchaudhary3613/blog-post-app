@@ -10,11 +10,23 @@ const API_KEY = '?key=PAPERCLIP1234';
 
 export function fetchPosts() {
     const request = axios.get(`${ROOT_URL}/posts${API_KEY}`);
-    //console.log('request', request);
+    console.log('request', request);
     return {
         type: 'FETCH_POSTS',
         payload: request
     };
+
+    // Redux thunk
+    // return (dispatch) => {
+    //     request.then (({data}) => {
+    //         console.log("thunkdata", data);
+    //         dispatch({
+    //             type: 'FETCH_POSTS',
+    //             payload: data
+    //         })
+            
+    //     });
+    // }
 }
 
 export function createPost(values, callback) {
